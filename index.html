@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing Speed</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1c65967ddf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h3>Difficulity</h3>
+      <div>
+        <select name="difficulity" id="difficulity">
+          <option disabled selected value="">Choose difficulity</option>
+          <option value="easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+    </header>
+    <div class="card__container">
+      <div class="card">
+        <div class="card__header">👨‍💻 Typing speed 👨‍💻</div>
+        <div class="stats">
+          <p>Time left: <span class="time"></span></p>
+          <p>Score: <span class="score">0</span></p>
+        </div>
+        <div class="word__showcase">
+          <p>Type the following:</p>
+          <p class="word">Airplane</p>
+        </div>
+        <input
+          type="text"
+          autocomplete="off"
+          id="text"
+          placeholder="Type the word here..."
+          class="input"
+        />
+        <div class="end__game"></div>
+      </div>
+    </div>
+    <footer>
+      <button class="settings" id="settings">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
